@@ -4,59 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>许成葳 - 个人网站</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.0/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|Material+Icons">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gray-50 font-['Inter']">
     <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">许成葳</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">关于我</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">工作经历</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">技能</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hobbies">兴趣爱好</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">联系方式</a>
-                    </li>
-                </ul>
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-900">许成葳</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">首页</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">关于我</a>
+                <a href="#experience" class="text-gray-600 hover:text-blue-600 transition-colors">工作经历</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">技能</a>
+                <a href="#hobbies" class="text-gray-600 hover:text-blue-600 transition-colors">兴趣爱好</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">联系方式</a>
             </div>
+            <button class="md:hidden text-gray-600">
+                <i class="material-icons">menu</i>
+            </button>
         </div>
     </nav>
 
     <!-- 英雄区 -->
-    <section id="home" class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 font-weight-bold">许成葳</h1>
-                    <p class="lead">技术工程师 | 项目管理 | 外贸沟通</p>
-                    <p class="text-muted">南京林业大学工业设计专业 | 英语六级</p>
-                    <div class="mt-4">
-                        <a href="#contact" class="btn btn-primary btn-lg">联系我</a>
-                        <a href="#about" class="btn btn-outline-light btn-lg ml-2">了解更多</a>
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        许成葳
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-4">
+                        技术工程师 | 项目管理 | 外贸沟通
+                    </p>
+                    <p class="text-gray-500 mb-8">
+                        南京林业大学工业设计专业 | 英语六级
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
+                            联系我
+                        </a>
+                        <a href="#about" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors">
+                            了解更多
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
-                    <div class="hero-image">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20portrait%20of%20a%20Chinese%20male%20engineer%20in%20business%20attire%20with%20confident%20expression&image_size=square_hd" alt="许成葳" class="img-fluid rounded-circle shadow-lg">
+                <div class="order-1 lg:order-2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20portrait%20of%20a%20Chinese%20male%20engineer%20in%20business%20attire%20with%20confident%20expression&image_size=square_hd" alt="许成葳" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg">
+                            <p class="text-sm font-medium text-gray-900">29岁</p>
+                            <p class="text-xs text-gray-500">工业设计专业</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,43 +66,49 @@
     </section>
 
     <!-- 关于我 -->
-    <section id="about" class="py-12 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-title">关于我</h2>
-                    <div class="divider mx-auto"></div>
-                </div>
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">关于我</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
             </div>
-            <div class="row mt-8">
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-muted">我是许成葳，29岁，南京林业大学工业设计专业本科毕业，英语六级。现任德企技术工程师，负责零售店面展示道具出口业务，服务雀巢等国际品牌。</p>
-                    <p class="text-muted">我具备项目管理、技术对接与外贸沟通经验，日常工作以英语为主要沟通语言。目前正寻求转型，求职方向为项目专员、项目经理、采购专员等相关岗位。</p>
-                    <p class="text-muted">业余爱好越野跑、滑雪、旅行，具备较强的规划执行能力与跨场景综合素养。同时擅长AI辅助内容创作、游戏开发及自动化工具应用，综合能力全面。</p>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm">
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        我是许成葳，29岁，南京林业大学工业设计专业本科毕业，英语六级。现任德企技术工程师，负责零售店面展示道具出口业务，服务雀巢等国际品牌。
+                    </p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        我具备项目管理、技术对接与外贸沟通经验，日常工作以英语为主要沟通语言。目前正寻求转型，求职方向为项目专员、项目经理、采购专员等相关岗位。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        业余爱好越野跑、滑雪、旅行，具备较强的规划执行能力与跨场景综合素养。同时擅长AI辅助内容创作、游戏开发及自动化工具应用，综合能力全面。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 工作经历 -->
-    <section id="experience" class="py-12">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-title">工作经历</h2>
-                    <div class="divider mx-auto"></div>
-                </div>
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">工作经历</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
             </div>
-            <div class="row mt-8">
-                <div class="col-lg-10 mx-auto">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-icon"><i class="material-icons">work</i></div>
-                            <div class="timeline-content">
-                                <h3>德企技术工程师</h3>
-                                <p class="text-muted">负责零售店面展示道具出口业务，服务雀巢等国际品牌</p>
-                                <p class="text-sm text-muted">主要职责：项目管理、技术对接、外贸沟通</p>
-                                <p class="text-sm text-muted">工作语言：英语</p>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="material-icons text-blue-600">work</i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">德企技术工程师</h3>
+                            <p class="text-gray-600 mb-3">负责零售店面展示道具出口业务，服务雀巢等国际品牌</p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">项目管理</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">技术对接</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">外贸沟通</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">英语工作环境</span>
                             </div>
                         </div>
                     </div>
@@ -110,76 +118,111 @@
     </section>
 
     <!-- 技能 -->
-    <section id="skills" class="py-12 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-title">技能</h2>
-                    <div class="divider mx-auto"></div>
-                </div>
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">技能</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
             </div>
-            <div class="row mt-8">
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="material-icons">design_services</i></div>
-                        <h3>设计软件</h3>
-                        <ul class="list-unstyled">
-                            <li>CAD</li>
-                            <li>SolidWorks</li>
-                        </ul>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 设计软件 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="material-icons text-2xl text-blue-600">design_services</i>
                     </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">设计软件</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span class="text-gray-700">CAD</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span class="text-gray-700">SolidWorks</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="material-icons">language</i></div>
-                        <h3>语言能力</h3>
-                        <ul class="list-unstyled">
-                            <li>英语六级</li>
-                            <li>日常工作沟通语言</li>
-                        </ul>
+                <!-- 语言能力 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="material-icons text-2xl text-blue-600">language</i>
                     </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">语言能力</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span class="text-gray-700">英语六级</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span class="text-gray-700">日常工作沟通语言</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="material-icons">code</i></div>
-                        <h3>其他技能</h3>
-                        <ul class="list-unstyled">
-                            <li>AI辅助内容创作</li>
-                            <li>游戏开发</li>
-                            <li>自动化工具应用</li>
-                        </ul>
+                <!-- 其他技能 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="material-icons text-2xl text-blue-600">code</i>
                     </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">其他技能</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span class="text-gray-700">AI辅助内容创作</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span class="text-gray-700">游戏开发</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span class="text-gray-700">自动化工具应用</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 兴趣爱好 -->
-    <section id="hobbies" class="py-12">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-title">兴趣爱好</h2>
-                    <div class="divider mx-auto"></div>
-                </div>
+    <section id="hobbies" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">兴趣爱好</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
             </div>
-            <div class="row mt-8">
-                <div class="col-lg-4 col-md-6">
-                    <div class="hobby-card">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=trail%20running%20in%20mountainous%20terrain&image_size=square" alt="越野跑" class="img-fluid rounded">
-                        <h3>越野跑</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 越野跑 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-md">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=trail%20running%20in%20mountainous%20terrain&image_size=square" alt="越野跑" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white">越野跑</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="hobby-card">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=person%20skiing%20down%20a%20snowy%20mountain&image_size=square" alt="滑雪" class="img-fluid rounded">
-                        <h3>滑雪</h3>
+                <!-- 滑雪 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-md">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=person%20skiing%20down%20a%20snowy%20mountain&image_size=square" alt="滑雪" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white">滑雪</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="hobby-card">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=travel%20photography%20of%20beautiful%20landscape&image_size=square" alt="旅行" class="img-fluid rounded">
-                        <h3>旅行</h3>
+                <!-- 旅行 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-md">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=travel%20photography%20of%20beautiful%20landscape&image_size=square" alt="旅行" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white">旅行</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,30 +230,32 @@
     </section>
 
     <!-- 联系方式 -->
-    <section id="contact" class="py-12 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-title">联系方式</h2>
-                    <div class="divider mx-auto"></div>
-                </div>
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">联系方式</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
             </div>
-            <div class="row mt-8">
-                <div class="col-lg-6 mx-auto">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">姓名</label>
-                            <input type="text" class="form-control" id="name" placeholder="您的姓名">
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm">
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">姓名</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" placeholder="您的姓名">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">邮箱</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" placeholder="您的邮箱">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">邮箱</label>
-                            <input type="email" class="form-control" id="email" placeholder="您的邮箱">
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">留言</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" placeholder="请输入您的留言"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">留言</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="请输入您的留言"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">发送</button>
+                        <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                            发送
+                        </button>
                     </form>
                 </div>
             </div>
@@ -218,19 +263,31 @@
     </section>
 
     <!-- 页脚 -->
-    <footer class="bg-dark text-white py-6">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>&copy; 2026 许成葳. 保留所有权利.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold">许成葳</h3>
+                    <p class="text-gray-400 mt-2">技术工程师 | 项目管理 | 外贸沟通</p>
                 </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="material-icons">mail</i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="material-icons">link</i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="material-icons">person</i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2026 许成葳. 保留所有权利.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
