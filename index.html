@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="许成葳的个人网站 - 技术工程师、项目管理、外贸沟通">
+    <title>S1mon | 许成葳</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-bar"></div>
+            <span>S1MON</span>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">S1mon</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-section="home">首页</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">关于</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">经历</a></li>
+                <li><a href="#portfolio" class="nav-link" data-section="portfolio">作品</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">技能</a></li>
+                <li><a href="#hobbies" class="nav-link" data-section="hobbies">爱好</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="hero">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">你好，我是</p>
+                <h1 class="hero-name">许成葳</h1>
+                <p class="hero-title">技术工程师 · 项目管理 · 外贸沟通</p>
+                <p class="hero-desc">南京林业大学工业设计 | 德企技术工程师 | 英语工作环境</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">查看作品</a>
+                    <a href="#contact" class="btn btn-outline">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="70" r="40" fill="currentColor" opacity="0.3"/>
+                            <ellipse cx="100" cy="170" rx="70" ry="50" fill="currentColor" opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="floating-card card-1">
+                    <span class="card-icon">🎯</span>
+                    <span class="card-label">29岁</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-icon">🌍</span>
+                    <span class="card-label">英语工作</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>向下滚动</p>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 / 关于</span>
+                <h2 class="section-title">关于我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">
+                        我是许成葳，29岁，南京林业大学工业设计专业本科毕业，现任德企技术工程师。
+                    </p>
+                    <p>
+                        我负责零售店面展示道具出口业务，服务雀巢等国际品牌。日常工作以英语为主要沟通语言，具备项目管理、技术对接与外贸沟通的丰富经验。
+                    </p>
+                    <p>
+                        目前正寻求转型，求职方向为项目专员、项目经理、采购专员等相关岗位。业余时间热衷于越野跑、滑雪和旅行，同时擅长AI辅助内容创作、游戏开发及自动化工具应用。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">年工作经验</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">CET-6</span>
+                            <span class="stat-label">英语水平</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">🏃</span>
+                            <span class="stat-label">越野跑爱好者</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3>基本信息</h3>
+                        <ul class="info-list">
+                            <li><span class="info-label">姓名</span><span class="info-value">许成葳</span></li>
+                            <li><span class="info-label">年龄</span><span class="info-value">29岁</span></li>
+                            <li><span class="info-label">学历</span><span class="info-value">本科</span></li>
+                            <li><span class="info-label">专业</span><span class="info-value">工业设计</span></li>
+                            <li><span class="info-label">学校</span><span class="info-value">南京林业大学</span></li>
+                            <li><span class="info-label">英语</span><span class="info-value">CET-6</span></li>
+                            <li><span class="info-label">现职</span><span class="info-value">德企技术工程师</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 / 经历</span>
+                <h2 class="section-title">工作经历</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>德企技术工程师</h3>
+                            <span class="timeline-date">至今</span>
+                        </div>
+                        <p class="timeline-desc">
+                            负责零售店面展示道具出口业务，服务雀巢（Nestlé）等国际品牌。
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">项目管理</span>
+                            <span class="tag">技术对接</span>
+                            <span class="tag">外贸沟通</span>
+                            <span class="tag tag-highlight">英语工作环境</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>南京林业大学</h3>
+                            <span class="timeline-date">本科</span>
+                        </div>
+                        <p class="timeline-desc">
+                            工业设计专业，系统学习产品设计、用户体验、工程制图等核心课程。
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">CAD</span>
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">产品设计</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 / 作品</span>
+                <h2 class="section-title">我的作品</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item item-large">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <span class="placeholder-icon">📐</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>工业设计作品</h3>
+                            <p>大学期间完成的工业设计项目</p>
+                            <span class="view-btn">查看 →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <span class="placeholder-icon">🎮</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>游戏开发</h3>
+                            <p>独立开发的小游戏项目</p>
+                            <span class="view-btn">查看 →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <span class="placeholder-icon">🤖</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>AI 内容创作</h3>
+                            <p>AI 辅助的设计与内容作品</p>
+                            <span class="view-btn">查看 →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <span class="placeholder-icon">🏃</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>越野跑 · 记录</h3>
+                            <p>越野跑赛事与训练记录</p>
+                            <span class="view-btn">查看 →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <span class="placeholder-icon">⛷️</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>滑雪 · 瞬间</h3>
+                            <p>雪场上的精彩瞬间</p>
+                            <span class="view-btn">查看 →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">
+                            <span class="placeholder-icon">📸</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>旅行 · 摄影</h3>
+                            <p>旅途中的风景与故事</p>
+                            <span class="view-btn">查看 →</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="portfolio-note">💡 提示：以上为作品展示位，可替换为你实际的项目图片</p>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 / 技能</span>
+                <h2 class="section-title">专业技能</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>设计软件</h3>
+                    <ul class="skill-list">
+                        <li>CAD 工程制图</li>
+                        <li>SolidWorks 3D建模</li>
+                        <li>产品设计与渲染</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>语言能力</h3>
+                    <ul class="skill-list">
+                        <li>英语六级 CET-6</li>
+                        <li>英语日常工作沟通</li>
+                        <li>跨文化商务交流</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📋</div>
+                    <h3>项目管理</h3>
+                    <ul class="skill-list">
+                        <li>出口业务流程管理</li>
+                        <li>国际品牌项目对接</li>
+                        <li>跨部门协调沟通</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI & 技术</h3>
+                    <ul class="skill-list">
+                        <li>AI辅助内容创作</li>
+                        <li>游戏开发</li>
+                        <li>自动化工具应用</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 兴趣爱好 -->
+    <section id="hobbies" class="section hobbies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 / 爱好</span>
+                <h2 class="section-title">兴趣爱好</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-emoji">🏃</div>
+                    <h3>越野跑</h3>
+                    <p>在山野间挑战自我，用脚步丈量自然的边界</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">⛷️</div>
+                    <h3>滑雪</h3>
+                    <p>速度与激情的结合，在雪道上感受自由</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">✈️</div>
+                    <h3>旅行</h3>
+                    <p>用镜头记录世界，用脚步感受不同的文化</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">06 / 联系</span>
+                <h2 class="section-title">联系我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>期待与你交流</h3>
+                    <p>无论是项目合作、工作机会，还是单纯想聊聊，都欢迎联系我。</p>
+                    <div class="contact-links">
+                        <a href="mailto:" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            <span>发送邮件</span>
+                        </a>
+                        <a href="https://github.com/CNLOVeU" class="contact-link" target="_blank">
+                            <span class="contact-icon">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" placeholder="你的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言</label>
+                        <textarea id="message" name="message" rows="5" placeholder="想对我说什么..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">S1mon</span>
+                    <p>技术工程师 · 项目管理 · 外贸沟通</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">首页</a>
+                    <a href="#about">关于</a>
+                    <a href="#portfolio">作品</a>
+                    <a href="#contact">联系</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/CNLOVeU" target="_blank" aria-label="GitHub">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 许成葳. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
