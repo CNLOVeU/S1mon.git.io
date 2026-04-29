@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>命书 · 旺自己的小习惯</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a1510;
+    font-family: 'Noto Serif SC', serif;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 372px;
+    height: 498px;
+    border-radius: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  /* === COVER CARD === */
+  .cover {
+    background: #faf6f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 35px;
+    position: relative;
+  }
+
+  .cover-brand {
+    position: absolute;
+    top: 22px;
+    left: 35px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.6rem;
+    color: #c4956a;
+    letter-spacing: 1px;
+    opacity: 0.5;
+  }
+
+  .cover-emoji {
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+  }
+
+  .cover-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #3d3425;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  .cover-title .accent {
+    color: #c4956a;
+  }
+
+  .cover-sub {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.72rem;
+    color: #8a7e72;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  .cover-hint {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.62rem;
+    color: #c4956a;
+    border: 1px solid #e8d5c4;
+    padding: 3px 12px;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+
+  /* === CONTENT CARDS === */
+  .content-card {
+    background: #faf6f1;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 38px;
+    position: relative;
+  }
+
+  .content-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 38px;
+    right: 38px;
+    height: 1px;
+    background: #e8d5c4;
+  }
+
+  .card-number {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #c4956a;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .card-divider {
+    width: 30px;
+    height: 2px;
+    background: #e8d5c4;
+    margin-bottom: 22px;
+  }
+
+  .card-text {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.92rem;
+    line-height: 2;
+    color: #3d3425;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  .card-text em {
+    color: #c4956a;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .card-footer-line {
+    width: 30px;
+    height: 1px;
+    background: #e8d5c4;
+  }
+
+  .card-brand {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.6rem;
+    color: #c4956a;
+    letter-spacing: 2px;
+    opacity: 0.6;
+  }
+
+  /* === END CARD === */
+  .end-card {
+    background: #3d3425;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 40px;
+    position: relative;
+  }
+
+  .end-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+  }
+
+  .end-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #c4956a;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+
+  .end-text {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(250, 246, 241, 0.5);
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .end-brand {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.7rem;
+    color: rgba(196, 149, 106, 0.6);
+    letter-spacing: 3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 封面 -->
+<div class="card cover">
+  <div class="cover-brand">📖 命书</div>
+  <div class="cover-emoji">🔋</div>
+  <div class="cover-title">
+    让你越活越<br><span class="accent">旺自己</span>的<br>5个小习惯
+  </div>
+  <div class="cover-sub">
+    不需要很厉害<br>
+    坚持做就行
+  </div>
+  <div class="cover-hint">建议收藏</div>
+</div>
+
+<!-- 卡片1 -->
+<div class="card content-card">
+  <div class="card-number">1️⃣</div>
+  <div class="card-title">早起喝一杯温水</div>
+  <div class="card-divider"></div>
+  <div class="card-text">
+    不是养生，<br>
+    是告诉自己<em>"我今天开始了"</em>。<br><br>
+    每天用一件小事开场，<br>
+    一整天都不会失控。
+  </div>
+  <div class="card-footer">
+    <div class="card-footer-line"></div>
+    <div class="card-brand">命书</div>
+  </div>
+</div>
+
+<!-- 卡片2 -->
+<div class="card content-card">
+  <div class="card-number">2️⃣</div>
+  <div class="card-title">每天做一件拖延的小事</div>
+  <div class="card-divider"></div>
+  <div class="card-text">
+    小到<em>"回复一条消息"</em>就行。<br><br>
+    完成感就是能量。<br>
+    每次"做到了"，<br>
+    都在给自信充值。
+  </div>
+  <div class="card-footer">
+    <div class="card-footer-line"></div>
+    <div class="card-brand">命书</div>
+  </div>
+</div>
+
+<!-- 卡片3 -->
+<div class="card content-card">
+  <div class="card-number">3️⃣</div>
+  <div class="card-title">遇到烂人烂事转身就走</div>
+  <div class="card-divider"></div>
+  <div class="card-text">
+    不纠缠就是最大的自保。<br><br>
+    你的精力很贵，<br>
+    <em>别浪费在不值得的人身上。</em>
+  </div>
+  <div class="card-footer">
+    <div class="card-footer-line"></div>
+    <div class="card-brand">命书</div>
+  </div>
+</div>
+
+<!-- 卡片4 -->
+<div class="card content-card">
+  <div class="card-number">4️⃣</div>
+  <div class="card-title">睡前不刷手机</div>
+  <div class="card-divider"></div>
+  <div class="card-text">
+    安静5分钟，<br>
+    <em>让大脑清空。</em><br><br>
+    睡前最后一件事，<br>
+    决定了明天醒来的状态。
+  </div>
+  <div class="card-footer">
+    <div class="card-footer-line"></div>
+    <div class="card-brand">命书</div>
+  </div>
+</div>
+
+<!-- 卡片5 -->
+<div class="card content-card">
+  <div class="card-number">5️⃣</div>
+  <div class="card-title">每周有一天完全属于自己</div>
+  <div class="card-divider"></div>
+  <div class="card-text">
+    不社交、不工作、不讨好任何人。<br><br>
+    这一天只做一件事——<br>
+    <em>做自己。</em>
+  </div>
+  <div class="card-footer">
+    <div class="card-footer-line"></div>
+    <div class="card-brand">命书</div>
+  </div>
+</div>
+
+<!-- 尾卡 -->
+<div class="card end-card">
+  <div class="end-icon">✨</div>
+  <div class="end-title">收藏这条</div>
+  <div class="end-text">
+    从今天开始，选一个习惯<br>
+    坚持7天，回来告诉我变化
+  </div>
+  <div class="end-brand">📖 命书</div>
+</div>
+
+</body>
+</html>
