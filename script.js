@@ -62,3 +62,14 @@ document.querySelectorAll('.skill-card, .life-card, .gallery-item').forEach(card
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     cardObserver.observe(card);
 });
+// Project carousels
+document.querySelectorAll('.project-carousel').forEach(container => {
+    const imgs = container.querySelectorAll('.carousel-img');
+    if (imgs.length < 2) return;
+    let current = 0;
+    setInterval(() => {
+        imgs[current].classList.remove('active');
+        current = (current + 1) % imgs.length;
+        imgs[current].classList.add('active');
+    }, 5000);
+});
