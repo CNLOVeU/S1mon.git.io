@@ -862,3 +862,32 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
     object-fit: cover;
     display: block;
 }
+
+/* === Project Dual Image (Store Fixture) === */
+.project-dual-img .project-images-dual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    width: 100%;
+}
+
+.project-dual-img .project-image {
+    aspect-ratio: 4/3;
+    background: var(--bg-soft);
+    overflow: hidden;
+}
+
+/* === Project Image Grid (Cross-border 2×2) === */
+.project-images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-images-grid .project-image {
+    aspect-ratio: 2/1;
+    background: var(--bg-soft);
+    overflow: hidden;
+}
