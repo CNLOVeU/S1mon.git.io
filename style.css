@@ -863,8 +863,6 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
     display: block;
 }
 
-/* === Project Dual Image (Store Fixture) === */
-.project-dual-img .project-images-dual {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4px;
