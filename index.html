@@ -43,6 +43,7 @@
                 </p>
             </div>
         </div>
+        <canvas id="ring-wave" class="ring-wave"></canvas>
         <div class="hero-scroll">
             <div class="scroll-line"></div>
             <span>scroll</span>
@@ -113,7 +114,7 @@
                         technical details, supplier communication, production follow-up and export delivery.
                         Global brand projects include <strong>Nespresso</strong>, <strong>IWC</strong>, <strong>HUGO BOSS</strong> and others.
                         <br><br>
-                        我拥有工业设计背景，目前在德企担任技术工程师，主要负责全球品牌零售展示项目的工程深化、生产协调与出口交付。
+                        我拥有工业设计背景，目前在德企担任技术工程师，主要负责全球品牌零售展示项目，包括 <strong>雀巢 (Nespresso)</strong>、<strong>IWC</strong>、<strong>HUGO BOSS</strong> 等品牌的工程深化、生产协调与出口交付。
                         <br>
                         我的优势在于同时理解设计语言、制造工艺与跨境项目管理，能够将品牌概念转化为可落地的终端展示方案。
                     </p>
@@ -173,7 +174,93 @@
                 <p class="cn">个人知识库搭建 · AI工具应用 · 归纳问题与解决方案 · 持续进步</p>
             </div>
         </div>
+
+        <!-- Project Details Trigger -->
+        <button class="project-detail-btn" onclick="openProjectModal()">
+            <span class="btn-line"></span>
+            <span class="btn-text">View Project Details</span>
+            <span class="btn-arrow">→</span>
+        </button>
     </section>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal-overlay" onclick="closeProjectModal(event)">
+        <div class="modal-glass" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeProjectModal()">✕</button>
+            <div class="modal-body">
+                <h2 class="modal-title">具体项目与工作范围</h2>
+                <p class="modal-subtitle">Specific Projects &amp; Workflow Scope</p>
+
+                <div class="modal-section">
+                    <p>我参与维护和跟进的项目主要覆盖零售展示、精品门店道具、POSM、技术图纸与安装协同等方向。</p>
+                    <p>项目分布在澳大利亚、日本、韩国、香港、台湾、东南亚、中东、非洲、北美等多个国家和区域，涉及新项目上线、追加批次、维护项目、服务类项目和视觉更新类任务。</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>代表性项目范围</h3>
+                    <p>我实际跟进过的项目类型包括：</p>
+                    <ul>
+                        <li>澳大利亚 Harvey Norman 与 The Good Guys 相关门店展示项目</li>
+                        <li>日本百货 / 门店类项目，如 Osaka Takashimaya、Ikebukuro、AEON Lake Town</li>
+                        <li>韩国门店及展示项目，如 Lotte Gwangbok、Time Square、Bun Dang</li>
+                        <li>香港附加批次与服务类项目，如 APM Mall、IFC Mall、Elements Mall</li>
+                        <li>台湾 Sogo City 相关批次、logo、维护与模板任务</li>
+                        <li>东南亚项目，如 Greenbelt Mall、Westgate、Lotte Mall West Lake Hanoi、Jakarta LED 范围</li>
+                        <li>中东与非洲项目，如 Dubai Hills、South Africa pop-up、Eastgate Mall</li>
+                        <li>北美项目，如 Canadian Tire 批量订单项目及 USA boutique 相关任务</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>技术与图纸协作范围</h3>
+                    <p>除项目主表维护外，我还参与过图纸时间线与技术任务协作，包括：</p>
+                    <ul>
+                        <li>SKU 清单整理</li>
+                        <li>Submission date 跟进</li>
+                        <li>工程师分工与任务追踪</li>
+                        <li>3D Layout / BOM / Drawing Release 节点管理</li>
+                        <li>多种零售道具模块拆分与状态整理</li>
+                    </ul>
+                </div>
+
+                <div class="modal-divider"></div>
+
+                <div class="modal-section">
+                    <h3>Selected Projects &amp; Workflow Scope</h3>
+                    <p>I worked on maintaining and coordinating project tracking systems for retail display, boutique fixture and technical workflow management across multiple regions. The work included both high-level project board management and detailed drawing / SKU timeline coordination for fixture-based retail projects.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4>Representative project coverage</h4>
+                    <p><strong>Retail display and fixture projects</strong></p>
+                    <p>Projects tracked in the board included store fixture, POSM, pop-up, maintenance, additional batch and service-related work across locations such as:</p>
+                    <ul>
+                        <li>Australia: Townsville, Smithfield, Rockdale, Essendon, Fyshwick, Chadstone, Doncaster, Kariñup, Pitt Street</li>
+                        <li>New Zealand: Hamilton</li>
+                        <li>Japan: Osaka Takashimaya, Ikebukuro, AEON Lake Town, Yokohama Takashimaya, Hamamatsu Entetsu</li>
+                        <li>South Korea: Lotte Gwangbok, JWD Mumbai-linked rollout coordination, Time Square, Bun Dang, Gocheok</li>
+                        <li>Hong Kong: APM Mall, IFC Mall, Elements Mall, operational sleeve wall tasks</li>
+                        <li>Taiwan: Sogo City-related batches, logo, floor template and maintenance items</li>
+                        <li>South East Asia: Greenbelt Mall, Westgate, Lotte Mall West Lake Hanoi, Chiang Mai canopy, Jakarta LED scope</li>
+                        <li>Middle East / Africa: Dubai Hills, Eastgate Mall, South Africa pop-up</li>
+                        <li>North America: Canadian Tire bulk order projects, Tampa International Plaza, NYC Madison Avenue-related task</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4>Technical workflow and drawing coordination</h4>
+                    <p>I also supported technical workflow tracking for engineering and drawing-related tasks, including:</p>
+                    <ul>
+                        <li>drawing transfer tasks</li>
+                        <li>engineering task intake and assignment</li>
+                        <li>maintenance and additional scope coordination</li>
+                        <li>timeline tracking for submission, 3D layout, BOM and drawing release</li>
+                        <li>SKU-level tracking for fixture components</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Projects -->
     <section id="projects" class="section projects">
@@ -205,6 +292,14 @@
                     <p class="project-detail-cn">
                         负责全球20+国家零售展示项目落地：从方案设计、生产跟进到出口交付与安装支持。跨国品牌供应商管理与品质管控。
                     </p>
+                    <div class="project-location">
+                        <span class="loc-label">Location</span>
+                        <span class="loc-value">Chiang Mai, Thailand</span>
+                    </div>
+                    <div class="project-location">
+                        <span class="loc-label">Concept</span>
+                        <span class="loc-value">G3</span>
+                    </div>
                     <div class="project-meta">
                         <span class="meta-tag">20+ Countries</span>
                         <span class="meta-tag">Global Rollout</span>
@@ -227,6 +322,14 @@
                     <p class="project-detail-cn">
                         将展示概念转化为可生产的店面道具：SolidWorks 3D建模、工程图纸、材质选型与生产可行性优化。
                     </p>
+                    <div class="project-location">
+                        <span class="loc-label">Location</span>
+                        <span class="loc-value">Orion Bangalore, India</span>
+                    </div>
+                    <div class="project-location">
+                        <span class="loc-label">Concept</span>
+                        <span class="loc-value">NANO2024</span>
+                    </div>
                     <div class="project-meta">
                         <span class="meta-tag">SolidWorks</span>
                         <span class="meta-tag">CAD</span>
@@ -249,6 +352,14 @@
                     <p class="project-detail-cn">
                         将展示概念转化为可生产的店面道具：SolidWorks 3D建模、工程图纸、材质选型与生产可行性优化。
                     </p>
+                    <div class="project-location">
+                        <span class="loc-label">Location</span>
+                        <span class="loc-value">Orion Bangalore, India</span>
+                    </div>
+                    <div class="project-location">
+                        <span class="loc-label">Concept</span>
+                        <span class="loc-value">NANO2024</span>
+                    </div>
                     <div class="project-meta">
                         <span class="meta-tag">SolidWorks</span>
                         <span class="meta-tag">CAD</span>
@@ -257,9 +368,8 @@
                 </div>
             </div>
 
-            <!-- Project 03: Cross-border Project Coordination -->
+            <!-- Project 04: Cross-border Project Coordination -->
             <div class="project-card project-wide">
-
                 <div class="project-info">
                     <span class="project-num">04</span>
                     <h3>Cross-border Project Coordination</h3>
@@ -347,8 +457,8 @@
             <div class="life-card life-tall">
                 <img src="img/hobbies/IMG_6143.webp" alt="Distance" loading="lazy">
                 <div class="life-label">
-                    <span class="life-label-en">The Distance</span>
-                    <span class="life-label-cn">远方</span>
+                    <span class="life-label-en">Victory</span>
+                    <span class="life-label-cn">胜利</span>
                 </div>
             </div>
             <div class="life-card life-wide">
@@ -391,6 +501,7 @@
         <p>Designed & built by Chengwei Xu · 2026</p>
     </footer>
 
+    <script src="ring-wave.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

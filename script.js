@@ -62,3 +62,27 @@ document.querySelectorAll('.skill-card, .life-card, .gallery-item').forEach(card
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     cardObserver.observe(card);
 });
+// === Project Details Modal ===
+function openProjectModal() {
+    const modal = document.getElementById('projectModal');
+    if (!modal) return;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeProjectModal(e) {
+    if (e && e.target !== e.currentTarget) return;
+    const modal = document.getElementById('projectModal');
+    if (!modal) return;
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('projectModal');
+        if (modal && modal.classList.contains('active')) {
+            closeProjectModal({ target: modal, currentTarget: modal });
+        }
+    }
+});

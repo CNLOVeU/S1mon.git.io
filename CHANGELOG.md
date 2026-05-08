@@ -1,90 +1,33 @@
-# 📖 更新日志
+# Changelog
 
-## v3.0.0 — 2026-04-29 🚀
+## v4.3.0 — Ring Wave + Glass Modal (2026-05-08)
 
-> **全面重构！** 中英文双语、现代暗紫美学、全新内容架构。
+### Added
+- **Ring Wave Effect** — Canvas-based wavy glowing ring animation on hero right side, with pulsating concentric rings and right-edge highlight strip (purple + white glow)
+- **Project Details Modal** — Glass-morphism modal in What I Do section with bilingual project scope breakdown
+- **Project Location Info** — Location / Concept metadata display on project cards
 
-### ✨ 新增
-- **中英文双语** — 全页面支持中英双语内容，面向国际化展示
-- **英文导航与标题** — About / What I Do / Life / Gallery / Say Hi
-- **全新英雄区** — "Designing experiences that travel across borders" 标语
-- **作品画廊** — 工业设计/游戏开发/AI创作 分类图片画廊
-- **生活区域** — 越野跑、滑雪、旅行摄影高清照片墙
-- **个人档案卡片** — Age 29 · German Company · Industrial Design
+### Changed
+- About Me (CN): Added specific brand names (Nespresso, IWC, HUGO BOSS)
+- What I Do (CN): Text color improved for readability (`var(--text-muted)` → `var(--text-soft)`)
+- Selected Projects: Removed placeholder image from Cross-border card, added Location/Concept info to cards 01-03
+- Life: "The Distance / 远方" → "Victory / 胜利"
 
-### 🎨 设计
-- **纯黑背景** — `#0a0a0a` 深色基调，沉浸式体验
-- **紫色渐变主题** — `#a855f7 → #8b5cf6 → #6366f1` 渐变文字与装饰
-- **玻璃态卡片** — `backdrop-filter: blur()` 半透明磨砂玻璃效果
-- **渐变文字** — `-webkit-background-clip: text` 渐变标题
-- **响应式网格** — 画廊使用 CSS Grid 自适应布局
-- **滚动动画** — 元素滚动渐入效果
-- **鼠标悬停效果** — 卡片悬浮放大、边框高亮
-
-### 🛠 技术
-- 字体升级：DM Serif Display + Space Grotesk + Space Mono
-- CSS 变量全面管理主题色
-- 画廊点击放大预览功能
-- 移动端优化导航菜单
-- 图片使用 WebP 格式优化加载
-- 纯 HTML + CSS + JS，零构建工具
-
-### 🖼 资源
-- 新增 6 张画廊作品图片（工业设计/游戏开发相关）
-- 新增 13 张生活照片（越野跑/滑雪/旅行）
-- 所有图片统一 WebP 格式
+### Fixed
+- Restored missing `<section>` tag on Projects block (was causing alignment/padding issues)
+- Added `.project-wide` flexbox layout for horizontal image+text alignment
+- Standardized Location/Concept label alignment with CSS grid
 
 ---
 
-## v2.0.0 — 2026-04-27 🎉
+## v4.2.0 — Projects & Modal Fixes (pre-Vercel)
 
-> **完全重写！** 从设计到代码全面升级，打造现代感十足的个人展示网站。
+...
 
-### ✨ 新增
-- **作品集区域** — 全新 Portfolio 板块，支持网格布局展示项目图片
-- **粒子动画首页** — Canvas 粒子连线动画背景，科技感拉满
-- **深色模式支持** — 自动跟随系统深色/浅色模式切换
-- **打字机效果** — 首页描述文字逐字出现，增强视觉吸引力
-- **滚动动画** — IntersectionObserver 驱动的渐入动画
-- **通知系统** — 表单提交后弹出精美通知（替代 alert）
-- **响应式导航** — 移动端汉堡菜单 + 当前区域高亮
-- **信息卡片** — 关于我区域新增个人信息卡片
-- **时间线样式** — 工作经历改为时间线布局，更直观
+## v4.1.0 — Content Updates (pre-Vercel)
 
-### 🎨 设计
-- 全新配色方案（紫色渐变主题色）
-- 卡片式布局统一视觉语言
-- 圆角、阴影、间距全面优化
-- 浮动信息卡片动画
-- 鼠标滚轮指示器动画
+...
 
-### 🛠 技术
-- 移除外部图标库依赖（使用 emoji 替代）
-- CSS 变量统一管理主题
-- 性能优化（prefers-reduced-motion 支持）
-- Canvas 动画自动暂停（不可见时节省资源）
-- 纯 HTML + CSS + JS，零构建工具
+## v4.0.0 — Original GitHub Pages Version
 
-### 🐛 修复
-- 移除失效的第三方 AI 图片链接
-- 修复移动端菜单无法关闭的问题
-- 修复表单 alert 体验差的问题
-
----
-
-## v1.0.0 — 2026-04-26
-
-> 初始版本，基于 GitHub Pages 的个人网站模板。
-
-### ✨ 功能
-- 首页英雄区域
-- 关于我介绍
-- 工作经历展示
-- 技能列表
-- 兴趣爱好展示
-- 联系表单
-
-### 🛠 技术
-- HTML5 + CSS3 + JavaScript
-- Tailwind CSS CDN
-- GitHub Pages 部署
+Initial version deployed on GitHub Pages.
